@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int checkPrime(int n) {
     for (int i=3;i<=n;i+=2) {
