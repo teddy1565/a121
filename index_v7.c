@@ -17,9 +17,16 @@ int main(void) {
     while(scanf("%d %d",&n ,&m) != EOF) {
         int counter = 0;
         for (int i=n; i<=m; i++) {
-            if (checkPrime(i)) {
+            if ((i&1)) {
+                if (checkPrime(i)) {
+                    counter++;
+                    continue;
+                }
+            }
+            if (i == 2) {
                 counter++;
             }
+            
         }
         printf("%d\n", counter);
     }
