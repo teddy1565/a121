@@ -16,13 +16,7 @@ int main(void) {
     int n,m;
     while(scanf("%d %d",&n ,&m) != EOF) {
         int counter = 0;
-        if ((n&1) == 0) {
-            if (n == 2) {
-                counter++;
-            }
-            n++;
-        }
-        for (int i=n; i<=m; i+=2) {
+        for (int i=n; i<=m; i++) {
             if (checkPrime(i)) {
                 counter++;
             }
