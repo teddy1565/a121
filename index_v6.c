@@ -7,7 +7,6 @@ int Find_the_Primes(int x){
 }
 int main(){
     int a,b;
-    printf("%d\n", Find_the_Primes(15));
     while(scanf("%d %d",&a,&b)!=EOF){
         int sum=0;
         for(int i=a;i<=b;i++){
